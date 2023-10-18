@@ -29,7 +29,6 @@ results = cur.fetchall()
 # save the result with sep = ';'
 df = pd.DataFrame(results, columns=['Customer', 'Age', 'Item', 'Quantity'])
 df.to_csv('SQL_OUTPUT.csv', sep=';', index=False)
-conn.close()
 
 # ------------------------------------------------------------------------------------------------------
 
@@ -54,5 +53,7 @@ df = df.sort_values(by=["customer_id", "item_name"])
 
 # save the result with sep = ';'
 df.to_csv("PANDAS_OUPUT.csv", sep=";", index=False)
+
+conn.close()
 
 ------------------------------------------------------------------------------------------------------
