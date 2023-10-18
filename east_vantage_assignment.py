@@ -1,4 +1,4 @@
-Solution 1: SQL
+# Solution 1: SQL
 
 import sqlite3
 import pandas as pd
